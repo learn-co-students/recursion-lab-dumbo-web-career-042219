@@ -13,8 +13,7 @@ function printString(myString) {
 function reverseString(string) {
 
   if (string.length > 1) {
-    let reversed = string.substr(string.length - 1, 1) + reverseString(string.substring(0, string.length - 1))
-    return reversed
+    return string.substr(string.length - 1, 1) + reverseString(string.substring(0, string.length - 1))
   } else {
     return string
   }
